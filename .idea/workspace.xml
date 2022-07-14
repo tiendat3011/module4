@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d41bbd10-72e7-4fa6-9a06-3996d032e2d3" name="Default Changelist" comment="" />
+    <list default="true" id="d41bbd10-72e7-4fa6-9a06-3996d032e2d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/src/main/java/vn/codegym/controller/DemoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/src/main/java/vn/codegym/controller/DemoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/src/main/java/vn/codegym/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/src/main/java/vn/codegym/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVC/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2BruTwsYfFszUmvIzyIQx3q189H" />
   <component name="ProjectViewState">
@@ -34,6 +48,8 @@
       <updated>1657676536271</updated>
       <workItem from="1657676537630" duration="63000" />
       <workItem from="1657676625530" duration="1014000" />
+      <workItem from="1657762575681" duration="1575000" />
+      <workItem from="1657782846112" duration="99000" />
     </task>
     <servers />
   </component>
@@ -45,13 +61,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1657685227745" />
-    <state x="462" y="125" key="FileChooserDialogImpl" timestamp="1657685388091">
+    <state x="462" y="125" key="FileChooserDialogImpl" timestamp="1657782942609">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="462" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1657685388091" />
-    <state x="65" y="0" key="new project wizard" timestamp="1657685421587">
+    <state x="462" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1657782942609" />
+    <state x="65" y="0" key="new project wizard" timestamp="1657782944042">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1657685421587" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1657782944042" />
   </component>
 </project>

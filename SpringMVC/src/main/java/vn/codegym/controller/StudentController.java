@@ -19,13 +19,11 @@ import java.util.List;
 public class StudentController {
 
     @Autowired
-
     @Qualifier("studentServiceImpl")
     private IStudentService studentService;
 
     @GetMapping("")
-    public String showStudentList(Model model,
-                                  ModelMap modelMap){
+    public String showStudentList(Model model, ModelMap modelMap){
 
         List<Student> studentList = studentService.findAll();
 //        model.addAttribute("studentList", studentList);

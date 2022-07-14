@@ -20,31 +20,14 @@
 </head>
 <body>
 <div>
-    <div class="container">
-        <div>
-            <p>USD</p>
-            <input class="form-control" type="text" name="USD" placeholder="input USD" id="inputCurrency">
-            <button type="submit" class="btn btn-outline-success" id="btnSuccess">Current</button>
+    <form action="/current"  method="post">
+        <p>USD</p>
+        <input type="text" name="USD" placeholder="input USD" value="${usd}">
+        <p>VND</p>
+        <input type="text" readonly placeholder="0" value="${result}">
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">VND</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <input class="form-control" type="text"  placeholder="0" id="inputResult">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <button type="submit">Current</button>
+    </form>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
