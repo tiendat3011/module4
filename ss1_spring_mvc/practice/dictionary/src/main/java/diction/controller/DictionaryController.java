@@ -12,13 +12,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DictionaryController {
     @Autowired
     private DictionaryService dictionaryService;
+
     @GetMapping("")
-    public String showList(){
+    public String showList() {
         return "list";
     }
 
     @PostMapping("/dictionary")
-    public String dictionary(@RequestParam(name = "word") String word, Model model){
+    public String dictionary(@RequestParam(name = "word") String word, Model model) {
         model.addAttribute("translate", dictionaryService.getDictionary(word));
         model.addAttribute("english", word);
         return "list";

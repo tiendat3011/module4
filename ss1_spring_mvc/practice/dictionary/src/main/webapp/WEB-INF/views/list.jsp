@@ -21,7 +21,7 @@
 </head>
 <body>
 <div>
-    <form action="/dictionary"  method="post">
+    <form action="/dictionary" method="post">
         <p>English</p>
         <input type="text" name="word" placeholder="input word" value="${english}">
         <p>Vietnamese</p>
