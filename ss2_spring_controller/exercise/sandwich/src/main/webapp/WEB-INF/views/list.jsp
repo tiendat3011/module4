@@ -21,34 +21,17 @@
 </head>
 <body>
 <div>
-    <div class="container">
-        <form action="/save" method="post">
-            <div style="display: flex">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="condiment" type="checkbox" id="inlineCheckbox1" value="Salt">
-                    <label class="form-check-label" for="inlineCheckbox1">Salt</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="condiment" type="checkbox" id="inlineCheckbox2"
-                           value="Pepper">
-                    <label class="form-check-label" for="inlineCheckbox2">Pepper</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="condiment" type="checkbox" id="inlineCheckbox3"
-                           value="Mustard">
-                    <label class="form-check-label" for="inlineCheckbox3">Mustard</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="condiment" type="checkbox" id="inlineCheckbox4"
-                           value="Sugars">
-                    <label class="form-check-label" for="inlineCheckbox4">Sugars</label>
-                </div>
-            </div>
-            <hr>
-            <button type="submit" class="btn btn-outline-success">save</button>
-        </form>
-        <p class="alert alert-info">condiment: ${result}</p>
-    </div>
+    <form action="/save"  method="post">
+        <div style="display: flex">
+            <input type="checkbox" name="spices" value="Lettuce">Lettuce
+            <input type="checkbox" name="spices" value="Tomato" >Tomato
+            <input type="checkbox" name="spices" value="Mustard">Mustard
+            <input type="checkbox" name="spices" value="Sprouts">Sprouts
+        </div>
+        <hr>
+        <button type="submit">save</button>
+    </form>
+    <p>spices: ${result}</p>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
