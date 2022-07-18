@@ -18,8 +18,57 @@ public class ProductRepositoryImpl implements ProductRepository {
         productList.add(new Product(5, "iphone X ", 1000, "ok", "Apple"));
         productList.add(new Product(6, "iphone 6 ", 1000, "ok", "Apple"));
     }
+
     @Override
-    public List<Product> getData() {
+    public List<Product> findAll() {
         return productList;
+    }
+
+    @Override
+    public void create(Product product) {
+        productList.add(product);
+    }
+
+    @Override
+    public void delete(int id) {
+        for (int i = 0; i < productList.size(); i++) {
+            if (productList.get(i).getId() == id) {
+                productList.remove(i);
+                break;
+            }
+        }
+    }
+
+    @Override
+    public Product findById(int id) {
+        for (Product product : productList) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void update(int id, Product product) {
+
+        for (int i = 0; i < productList.size(); i++) {
+            if (productList.get(i).getId() == id) {
+                productList.set(i, product);
+                break;
+            }
+        }
+    }
+
+    @Override
+    public List<Product> search(String nameProduct) {
+        List<Product> productSearch = new ArrayList<>();
+
+        for (Product product : productList) {
+            if (product.getNameProduct().contains(nameProduct)) {
+                productSearch.add(product);
+            }
+        }
+        return productSearch;
     }
 }

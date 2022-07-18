@@ -45,7 +45,7 @@ public class ProductController {
     @PostMapping("/delete")
     public String delete(Product product, RedirectAttributes redirect) {
         productService.delete(product.getId());
-        redirect.addAttribute("message", "Removed customer successfully!");
+        redirect.addAttribute("message", "Xoa Thanh Cong!");
 
         return "redirect:/index";
     }
