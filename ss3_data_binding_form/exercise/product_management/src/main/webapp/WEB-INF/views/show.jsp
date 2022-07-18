@@ -1,0 +1,123 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: KILL YOU
+  Date: 7/13/2022
+  Time: 9:37 AM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<form:form action="show" method="post" modelAttribute="product">
+    <center>
+        <h1>TỜ KHAI BÁO Y TẾ</h1>
+        <br>
+        <h3>ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/ CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHONG
+            CHỐNG DỊCH BỆNH KHI CẦN THIẾT</h3>
+        <br>
+        <h5 style="color: red">Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình
+            sự</h5>
+    </center>
+    <table>
+        <div>
+            <div><label>Họ và tên</label></div>
+            <div><form:input path="name"/></div>
+        </div>
+
+        <div>
+            <div>
+                <div><label>Năm sinh</label></div>
+                <div>
+                    <form:select path="yearOfBirth">
+                        <form:options items="${years}"/>
+                    </form:select>
+                </div>
+            </div>
+            <div>
+                <div><label>Giới Tính</label></div>
+                <div>
+                    <form:select path="gender">
+                        <form:options items="${genders}"/>
+                    </form:select>
+                </div>
+            </div>
+            <div>
+                <div><label>Quốc Tịch</label></div>
+                <div>
+                    <form:select path="nationality">
+                        <form:options items="${nationality}"/>
+                    </form:select>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div><label>Số hộ chiếu hoặc CMND</label></div>
+            <div>
+                <form:input path="numberId"/>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <form:checkboxes items="${vehicles}" path="vehicle"/>
+            </div>
+        </div>
+
+        <div>
+            <div><label>Số hiệu phương tiện</label></div>
+            <div><form:input path="vehicleOfCode"/></div>
+        </div>
+
+        <div>
+            <div><label>Số ghế</label></div>
+            <div><form:input path="seatOfCode"/></div>
+        </div>
+
+        <div>
+            <div><label>Ngày khởi hành</label></div>
+            <div><form:input type="date" path="startDay"/></div>
+        </div>
+
+        <div>
+            <div><label>Ngày kết thúc </label></div>
+            <div><form:input type="date" path="endDay"/></div>
+        </div>
+
+        <div>
+            <div><label>Trong vòng 14 ngày qua có đi đâu không?</label></div>
+            <div><form:textarea path="info14Day"/></div>
+        </div>
+
+        <div>
+            <div><input style="background:#0f86ff" type="submit" value="Update"></div>
+            <div><input type="reset" value="Cancel"></div>
+        </div>
+    </table>
+</form:form>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

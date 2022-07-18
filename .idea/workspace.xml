@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d41bbd10-72e7-4fa6-9a06-3996d032e2d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/caculator/src/main/java/calculator/controller/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_views_thymeleaf/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_views_thymeleaf/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_views_thymeleaf/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_views_thymeleaf/.idea/ss4_views_thymeleaf.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_views_thymeleaf/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/build/classes/java/main/controller/SandwichController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/build/classes/java/main/controller/SandwichController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/build/libs/sandwich-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/build/libs/sandwich-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/src/main/java/controller/SandwichController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/src/main/java/controller/SandwichController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss2_spring_controller/exercise/sandwich/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +49,8 @@
       <workItem from="1657851665652" duration="647000" />
       <workItem from="1657857856368" duration="46000" />
       <workItem from="1657876703259" duration="187000" />
+      <workItem from="1658115581149" duration="45000" />
+      <workItem from="1658128510175" duration="47000" />
     </task>
     <servers />
   </component>
@@ -67,13 +62,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1657685227745" />
-    <state x="462" y="125" key="FileChooserDialogImpl" timestamp="1657876887530">
+    <state x="462" y="125" key="FileChooserDialogImpl" timestamp="1658128552435">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="462" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1657876887530" />
-    <state x="65" y="0" key="new project wizard" timestamp="1657876889495">
+    <state x="462" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1658128552435" />
+    <state x="58" y="13" width="1235" height="708" key="new project wizard" timestamp="1658128555897">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1657876889495" />
+    <state x="58" y="13" width="1235" height="708" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1658128555897" />
   </component>
 </project>
