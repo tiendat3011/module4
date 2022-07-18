@@ -29,6 +29,5 @@ public class MedicalController {
         model.addAttribute("medical", medical);
         return "list";
     }
-
 }
 
