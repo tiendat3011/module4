@@ -4,13 +4,15 @@
 <body>
 <h3>Add Customer</h3>
 <p>
-    <a th:href="@{/index}">
+    <a th:href="@{/list}">
         Back to music list
     </a>
 </p>
 <div id="form">
-    <form th:action="@{/create}" th:object="${music}" method="post">
-        <input type="hidden" th:field="*{id}">
+    <form th:action="@{/create}" th:object="${musicM}" method="post">
+        <div>
+            <input type="hidden" th:field="*{id}">
+        </div>
         <div>
             <label>Tên bài hát</label>
             <input type="text" th:field="*{name}">

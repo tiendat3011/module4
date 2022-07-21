@@ -6,16 +6,16 @@
           crossorigin="anonymous">
 </head>
 <body>
-<h3>Product</h3>
+<h3>Music</h3>
 <p>
     <a th:href="@{/create}">
         Add new music
     </a>
 </p>
 
-<form action="/search">
+<form action="/search" method="get">
     <label>
-        <input type="text" name="nameSinger">
+        <input type="text" name="name">
     </label>
     <button type="submit">Tìm kiếm</button>
 </form>
@@ -43,6 +43,7 @@
         <td th:text="${music.category}"></td>
         <td><a th:text="${music.link}" th:href="${music.link}"></a></td>
         <td><a th:href="@{/{id}/update(id=${music.getId()})}">edit</a></td>
+
         <td><!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
                     th:data-bs-target="'#staticBackdrop' + ${music.id}">

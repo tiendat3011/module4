@@ -8,7 +8,7 @@ import javax.persistence.*;
 public class Music {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     @Column(name = "name")
     private String name;
     @Column(name = "singer")
@@ -17,13 +17,14 @@ public class Music {
     private String category;
     @Column(name = "link")
     private String link;
+
     @ColumnDefault("0")
     private int status;
 
     public Music() {
     }
 
-    public Music(int id, String name, String singer, String category, String link, int status) {
+    public Music(Integer id, String name, String singer, String category, String link, int status) {
         this.id = id;
         this.name = name;
         this.singer = singer;
@@ -32,11 +33,11 @@ public class Music {
         this.status = status;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
