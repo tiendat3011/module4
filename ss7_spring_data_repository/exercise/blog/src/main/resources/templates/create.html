@@ -23,11 +23,11 @@
 
         <div>
             <label>Ngày viết</label>
-            <input type="text" th:field="*{dateWrite}">
+            <input type="date" th:field="*{dateWrite}">
         </div>
         <div>
             <label>Danh mục</label>
-            <select th:field="*{id}">
+            <select th:field="*{category}">
                 <option
                         th:each="category: ${categoryList}" th:value="${category.id}" th:text="${category.typeBlog}">
 

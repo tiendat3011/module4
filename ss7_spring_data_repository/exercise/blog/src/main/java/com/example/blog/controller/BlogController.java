@@ -7,6 +7,7 @@ import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,7 +29,7 @@ public class BlogController {
                                   @RequestParam(name = "title", defaultValue = "") String title,
                                   Model model) {
         Sort sort = Sort.by("date_write").ascending();
-        Page<Blog> blogList = blogService.search(title, PageRequest.of(page, 2, sort));
+        Page<Blog> blogList = blogService.search(title, PageRequest.of(page, 1, sort));
         model.addAttribute("blog", new Blog());
         model.addAttribute("blogList", blogList);
         model.addAttribute("title", title);
@@ -89,8 +90,10 @@ public class BlogController {
     }
     @GetMapping("/searchCategory")
     public String searchCategory(@RequestParam(name = "page", defaultValue = "0")int page,
-                                 @RequestParam(name = "idCategory")String idCategory, Model model){
-        model.addAttribute("blogList", blogService.search(idCategory,PageRequest.of(page,2)));
+                                 @RequestParam(name = "title")String title, Model model){
+        Page<Blog> blogList= blogService.findAllByCategory_Id(title,PageRequest.of(page,1,short));
+        "blogList", blogService.search(title,PageRequest.of(page,1)))
+        model.addAttribute("title", title);
         return "redirect:/list";
     }
 }

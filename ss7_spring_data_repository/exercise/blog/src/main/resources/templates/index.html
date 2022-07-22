@@ -28,6 +28,7 @@
         <th>Tiêu đề</th>
         <th>Nội dung</th>
         <th>Ngày viết</th>
+        <th>Category</th>
         <th>Edit</th>
         <th>Delete</th>
         <th>Detail</th>
@@ -41,6 +42,7 @@
         <td th:text="${blog.title}"></td>
         <td th:text="${blog.content}"></td>
         <td th:text="${blog.dateWrite}"></td>
+        <td th:text="${blog.category.typeBlog}"></td>
         <td><a th:href="@{/{id}/update(id=${blog.getId()})}">edit</a></td>
         <!--        <td><a th:href="@{/{id}/delete(id=${product.getId()})}">delete</a></td>-->
         <td><!-- Button trigger modal -->

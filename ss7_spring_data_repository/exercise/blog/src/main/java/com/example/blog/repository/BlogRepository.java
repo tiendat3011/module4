@@ -17,10 +17,11 @@ public interface BlogRepository extends JpaRepository<Blog, Integer> {
     List<Blog> findAll();
 
     @Modifying
-    @Query(value = "insert into blog(title,content,date_write) values(:title,:content,:date)", nativeQuery = true)
+    @Query(value = "insert into blog(title,content,date_write,category_id) values(:title,:content,:date,:categoryId)", nativeQuery = true)
     void create(@Param("title") String title,
                 @Param("content") String content,
-                @Param("date") String date);
+                @Param("date") String date,
+                @Param("categoryId") Integer categoryId);
 
     @Modifying
     @Query(value = "update blog set title = :title,content = :content, date_write = :dateWrite where id = :id", nativeQuery = true)
@@ -42,4 +43,7 @@ public interface BlogRepository extends JpaRepository<Blog, Integer> {
 
     @Query(value = "select * from blog where status = 0", nativeQuery = true)
     Page<Blog> findAllBlog(Pageable pageable);
+
+//    @Query(value = "select * from blog where category_id = :category_id", nativeQuery = true)
+    Page<Blog> findAllByCategory_Id(Pageable pageable, Integer id);
 }

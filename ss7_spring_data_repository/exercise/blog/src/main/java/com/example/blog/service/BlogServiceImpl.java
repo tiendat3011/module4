@@ -21,7 +21,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public void create(Blog blog) {
-        blogRepository.create(blog.getTitle(),blog.getContent(),blog.getDateWrite());
+        blogRepository.create(blog.getTitle(),blog.getContent(),blog.getDateWrite(),blog.getCategory().getId());
     }
 
     @Override
@@ -42,11 +42,16 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public Page<Blog> search(String title, Pageable pageable) {
-        return blogRepository.search(title, pageable);
+        return blogRepository.search("%"+"title"+"%", pageable);
     }
 
     @Override
     public Page<Blog> findAllBlog(Pageable pageable) {
         return blogRepository.findAllBlog(pageable);
+    }
+
+    @Override
+    public Page<Blog> findAllByCategory_Id(Pageable pageable, Integer id) {
+        return blogRepository.findAllByCategory_Id(pageable, id);
     }
 }
