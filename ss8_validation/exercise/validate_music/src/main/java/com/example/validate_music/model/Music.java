@@ -31,7 +31,8 @@ public class Music {
     @ColumnDefault("0")
     private int status;
 
-    public Music(int id, @Pattern(regexp = "^[A-Za-z-0-9]*$", message = "Sai định dạng và không được để trống") @Size(max = 800) String nameMusic,
+    public Music(int id,
+                 @Pattern(regexp = "^[A-Za-z-0-9]*$", message = "Sai định dạng và không được để trống") @Size(max = 800) String nameMusic,
                  @Pattern(regexp = "^[A-Za-z-0-9]*$", message = "Sai định dạng và không được để trống") @Size(max = 300) String singer,
                  @Pattern(regexp = "^[A-Za-z-0-9],*$", message = "Sai định dạng và không được để trống") @Size(max = 1000) String typeMusic,
                  int status) {

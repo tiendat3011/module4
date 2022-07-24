@@ -37,25 +37,12 @@ public class ProductController {
         return "redirect:/index";
     }
 
-//    @GetMapping("/{id}/delete")
-//    public String delete(@PathVariable int id, Model model) {
-//        model.addAttribute("product", productService.findById(id));
-//        return "delete";
-//    }
-//
-//    @PostMapping("/delete")
-//    public String delete(Product product, RedirectAttributes redirect) {
-//        productService.delete(product.getId());
-//        redirect.addAttribute("message", "Xoa Thanh Cong!");
-//
-//        return "redirect:/index";
-//    }
-@GetMapping("/delete")
-public String delete(@RequestParam int id, RedirectAttributes redirect) {
-    productService.delete(id);
-    redirect.addFlashAttribute("success", "Delete successfully!");
-    return "redirect:/index";
-}
+    @GetMapping("/delete")
+    public String delete(@RequestParam int id, RedirectAttributes redirect) {
+        productService.delete(id);
+        redirect.addFlashAttribute("success", "Delete successfully!");
+        return "redirect:/index";
+    }
 
     @GetMapping("/{id}/update")
     public String update(@PathVariable int id, Model model) {
