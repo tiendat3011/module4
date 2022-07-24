@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d41bbd10-72e7-4fa6-9a06-3996d032e2d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/repository/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/repository/BlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/java/com/example/blog/service/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/resources/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/resources/templates/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/resources/templates/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/blog/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/product/product/src/main/java/com/example/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_spring_data_repository/exercise/product/product/src/main/java/com/example/product/repository/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +72,11 @@
       <workItem from="1658472638376" duration="180000" />
       <workItem from="1658473234589" duration="71000" />
       <workItem from="1658473418090" duration="74000" />
+      <workItem from="1658477003635" duration="471000" />
+      <workItem from="1658634847785" duration="159000" />
+      <workItem from="1658635617592" duration="112000" />
+      <workItem from="1658636376433" duration="781000" />
+      <workItem from="1658637291562" duration="144000" />
     </task>
     <servers />
   </component>

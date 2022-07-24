@@ -1,12 +1,13 @@
-package com.example.product.repository;
+package com.example.validate_product.repository;
 
-import com.example.product.model.Product;
+import com.example.validate_product.model.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
+
 import javax.transaction.Transactional;
 
 @Transactional
