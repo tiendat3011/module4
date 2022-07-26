@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/layout :: head"></head>
+
 <body>
 <h3>View Customer</h3>
 <p>
@@ -8,29 +8,33 @@
         Back to product list
     </a>
 </p>
-<div id="form">
-    <input type="hidden" th:field="*{id}">
+<div id="form " th:object="${product}">
+
     <div>
-        <label>Tên sản phẩm</label>
-        <input type="text" disabled th:field="*{product.nameProduct}">
+        <label>Id</label>
+        <a  th:text="${product.getId()} "></a>
     </div>
+
+        <div>
+            <label>Tên sản phẩm</label>
+            <a th:text="${product.getNameProduct()}"></a>
+        </div>
 
     <div>
         <label>Giá sản phẩm</label>
-        <input type="text" disabled th:field="*{product.priceProduct}">
+        <a th:text="${product.getPriceProduct()}"></a>
     </div>
 
     <div>
         <label>Chi tiết sản phẩm</label>
-        <input type="text" disabled th:field="*{product.detailProduct}">
+        <a  th:text="${product.getDetailProduct()}"></a>
     </div>
 
     <div>
         <label>Nhà sản xuất</label>
-        <input type="text" disabled th:field="*{product.production}">
+        <a  th:text="${product.getProduction()}"></a>
     </div>
 
 </div>
-<footer th:replace="/layout :: footer"></footer>
 </body>
 </html>

@@ -35,11 +35,6 @@ public class BlogController {
         model.addAttribute("title", title);
         return "index";
     }
-//            @PageableDefault(value = 2, sort = "id", direction = Sort.Direction.DESC) Pageable pageable, Model model) {
-//        model.addAttribute("blogList", blogService.findAllBlog(pageable));
-//        return "index";
-
-
     @GetMapping("/create")
     public String create(Model model) {
         model.addAttribute("blog", new Blog());
@@ -71,13 +66,6 @@ public class BlogController {
         blogService.update(blog);
         return "redirect:/list";
     }
-
-//    @GetMapping("/search")
-//    public String search(@RequestParam(value = "title", defaultValue = "") int page, String title, Model model) {
-//        model.addAttribute("blogList", blogService.search(title, PageRequest.of(page, 2)));
-//        return "index";
-//    }
-
     @GetMapping("/{id}/detail")
     public String view(@PathVariable int id, Model model) {
         model.addAttribute("blog", blogService.findById(id));

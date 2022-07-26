@@ -39,7 +39,8 @@ public class Product {
     public Product() {
     }
 
-    public Product(int id, @Pattern(regexp = "^[A-Za-z-0-9 ]*$", message = "Sai định dạng và không được để trống") String nameProduct,
+    public Product(int id,
+                   @Pattern(regexp = "^[A-Za-z-0-9 ]*$", message = "Sai định dạng và không được để trống") String nameProduct,
                    @Min(value = 1, message = "Không được nhập giá trị bé hơn 1") double priceProduct,
                    @Pattern(regexp = "^[A-Za-z-0-9 ]*$", message = "Sai định dạng và không được để trống") String detailProduct,
                    @Pattern(regexp = "^[A-Za-z-0-9 ]*$", message = "Sai định dạng và không được để trống") String production,

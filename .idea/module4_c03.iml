@@ -3,7 +3,10 @@
   <component name="FacetManager">
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="ss5_mysql_orm:exercise:music:build:resources:main:hibernate.conf.xml" />
+          <unit-entry name="ss5_mysql_orm:exercise:music:src:main:resources:hibernate.conf.xml" />
+        </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/ss5_mysql_orm/exercise/music/build/resources/main/hibernate.conf.xml" />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/ss5_mysql_orm/exercise/music/src/main/resources/hibernate.conf.xml" />
@@ -146,6 +149,16 @@
         </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/ss5_mysql_orm/exercise/music/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web15">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/ss5_mysql_orm/exercise/management_product/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/ss5_mysql_orm/exercise/management_product/src/main/webapp" relative="/" />
         </webroots>
       </configuration>
     </facet>

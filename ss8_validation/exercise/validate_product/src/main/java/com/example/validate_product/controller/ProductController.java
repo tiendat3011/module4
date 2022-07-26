@@ -1,6 +1,7 @@
 package com.example.validate_product.controller;
 
 import com.example.validate_product.model.Product;
+
 import com.example.validate_product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -42,19 +43,12 @@ public class ProductController {
         return "redirect:/list";
     }
 
-    @GetMapping("/{id}/delete")
-    public String delete(@PathVariable int id, Model model) {
-        model.addAttribute("product", productService.findById(id));
-        return "delete";
-    }
-
-    @PostMapping("/delete")
-    public String delete(Product product, RedirectAttributes redirect) {
-        productService.delete(product.getId());
-        redirect.addAttribute("message", "Removed customer successfully!");
+    @GetMapping("/delete")
+    public String delete(@RequestParam int id, RedirectAttributes redirect) {
+        productService.delete(id);
+        redirect.addFlashAttribute("success", "Delete successfully!");
         return "redirect:/list";
     }
-
     @GetMapping("/{id}/update")
     public String update(@PathVariable int id, Model model) {
         model.addAttribute("product", productService.findById(id));
