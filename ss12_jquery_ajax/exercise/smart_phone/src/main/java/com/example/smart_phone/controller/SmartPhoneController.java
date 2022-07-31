@@ -1,6 +1,5 @@
 package com.example.smart_phone.controller;
 
-
 import com.example.smart_phone.model.SmartPhone;
 import com.example.smart_phone.service.SmartPhoneService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/smartphones")
 public class SmartPhoneController {
-    @Autowired
+    @Autowired  
     private SmartPhoneService smartPhoneService;
 
     @PostMapping

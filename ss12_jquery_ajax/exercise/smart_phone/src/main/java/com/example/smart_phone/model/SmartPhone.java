@@ -59,5 +59,4 @@ public class SmartPhone {
         return producer + ": " + model + " with price " + price;
     }
 
-
 }
