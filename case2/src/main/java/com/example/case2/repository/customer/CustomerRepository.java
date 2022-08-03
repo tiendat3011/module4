@@ -1,7 +1,7 @@
-package com.example.case4.repository;
+package com.example.case2.repository.customer;
 
-import com.example.case4.model.customer.Customer;
-import com.example.case4.model.customer.dto.CustomerDto;
+import com.example.case2.model.customer.Customer;
+import com.example.case2.model.customer.dto.CustomerDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
@@ -20,23 +20,6 @@ public interface CustomerRepository extends PagingAndSortingRepository<Customer,
 
     @Query(value = "select c from Customer c where c.status = 0")
     List<Customer> findAll();
-
-    @Modifying
-    @Query(value = "insert into customer (customer_code,customer_name,customer_birthday,customer_gender,customer_id_card," +
-            "customer_phone,customer_email,customer_address,customer_type_id) values" +
-            " (:customerCode,:customerName,:customerBirthday,:customerGender,:customerIdCard," +
-            ":customerPhone,:customerEmail,:customerAddress,:customerType)", nativeQuery = true)
-
-        // Dùng câu truy vấn động bị lỗi
-    CustomerDto create(@Param("customerCode") String customerCode,
-                       @Param("customerName") String customerName,
-                       @Param("customerBirthday") String customerBirthday,
-                       @Param("customerGender") int customerGender,
-                       @Param("customerIdCard") String customerIdCard,
-                       @Param("customerPhone") String customerPhone,
-                       @Param("customerEmail") String customerEmail,
-                       @Param("customerAddress") String customerAddress,
-                       @Param("customerType") int customerType);
 
     @Query(value = "select * from customer where customer_id = :id", nativeQuery = true)
     Customer findById(@Param("id") int id);
@@ -65,7 +48,6 @@ public interface CustomerRepository extends PagingAndSortingRepository<Customer,
                 @Param("customerAddress") String customerAddress,
                 @Param("customerType") int customerType,
                 @Param("id") int idCustomer);
-
 }
 
 

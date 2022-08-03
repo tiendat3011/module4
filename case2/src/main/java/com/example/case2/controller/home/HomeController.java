@@ -1,4 +1,4 @@
-package com.example.case4.controller.home;
+package com.example.case2.controller.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +10,8 @@ public class HomeController {
         return "home_page/home";
     }
 
-//    @GetMapping("")
-//    public String login(){
-//        return "redirect:/login";
-//    }
+    @GetMapping("")
+    public String login(){
+        return "redirect:/login";
+    }
 }

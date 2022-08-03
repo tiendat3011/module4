@@ -1,9 +1,9 @@
-package com.example.case4.controller.customer;
+package com.example.case2.controller.customer;
 
-import com.example.case4.model.customer.Customer;
-import com.example.case4.model.customer.dto.CustomerDto;
-import com.example.case4.service.customer.CustomerService;
-import com.example.case4.service.customer.CustomerTypeService;
+import com.example.case2.model.customer.Customer;
+import com.example.case2.model.customer.dto.CustomerDto;
+import com.example.case2.service.customer.CustomerService;
+import com.example.case2.service.customer.CustomerTypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -47,8 +47,10 @@ public class CustomerController {
             model.addAttribute("customerTypeList", customerTypeService.findAll());
             return "customer/create-customer";
         }
+        Customer customer = new Customer();
+        BeanUtils.copyProperties(customerDto,customer);
 
-        customerService.create(customerDto);
+        customerService.save(customer);
         return "redirect:/list-customer";
     }
 
@@ -67,7 +69,8 @@ public class CustomerController {
 
         Customer customer = customerService.findById(id);
 
-        CustomerDto customerDto = new CustomerDto(customer.getCustomerId(),
+        CustomerDto customerDto = new CustomerDto(
+                customer.getCustomerId(),
                 customer.getCustomerCode(),
                 customer.getCustomerName(),
                 customer.getCustomerBirthday(),
@@ -99,7 +102,7 @@ public class CustomerController {
                 customerDto.getCustomerPhone(),
                 customerDto.getCustomerEmail(),
                 customerDto.getCustomerAddress(),
-                customerDto.getCustomerTypeId().getCustomerTypeId(),
+                customerDto.getCustomerType().getCustomerTypeId(),
                 customerDto.getId());
         return "redirect:/list-customer";
     }

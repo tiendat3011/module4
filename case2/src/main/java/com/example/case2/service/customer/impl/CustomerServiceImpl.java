@@ -1,8 +1,8 @@
-package com.example.case4.service.customer;
+package com.example.case2.service.customer.impl;
 
-import com.example.case4.model.customer.Customer;
-import com.example.case4.model.customer.dto.CustomerDto;
-import com.example.case4.repository.CustomerRepository;
+import com.example.case2.model.customer.Customer;
+import com.example.case2.repository.customer.CustomerRepository;
+import com.example.case2.service.customer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -20,13 +20,10 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void create(CustomerDto customerDto) {
-        customerRepository.create(customerDto.getCustomerCode(),
-                customerDto.getCustomerName(),customerDto.getCustomerBirthday(),
-                customerDto.getCustomerGender(),customerDto.getCustomerIdCard(),
-                customerDto.getCustomerPhone(),  customerDto.getCustomerEmail(),
-                customerDto.getCustomerAddress(), customerDto.getCustomerTypeId().getCustomerTypeId());
+    public Customer save(Customer customer) {
+        return customerRepository.save(customer);
     }
+
 
     @Override
     public void delete(int id) {
@@ -36,7 +33,6 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public List<Customer> findAll() {
         return customerRepository.findAll();
-
     }
 
     @Override
@@ -56,6 +52,5 @@ public class CustomerServiceImpl implements CustomerService {
                        int customerType,
                        int id) {
         customerRepository.update(customerCode, customerName, customerBirthday, customerGender, customerIdCard, customerPhone, customerEmail, customerAddress, customerType, id);
-
     }
 }
