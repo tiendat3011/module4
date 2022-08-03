@@ -28,26 +28,6 @@ public interface CustomerRepository extends PagingAndSortingRepository<Customer,
     @Query(value = "update customer set status = 1 where customer_id = :id", nativeQuery = true)
     void delete(@Param("id") int id);
 
-    @Modifying
-    @Query(value = "update customer set customer_code = :customerCode," +
-            "customer_name = :customerName," +
-            "customer_birthday = :customerBirthday," +
-            "customer_gender = :customerGender ," +
-            "customer_id_card = :customerIdCard ," +
-            "customer_phone = :customerPhone," +
-            "customer_email = :customerEmail," +
-            "customer_address = :customerAddress," +
-            "customer_type_id = :customerType where customer_id = :id", nativeQuery = true)
-    void update(@Param("customerCode") String customerCode,
-                @Param("customerName") String customerName,
-                @Param("customerBirthday") String customerBirthday,
-                @Param("customerGender") int customerGender,
-                @Param("customerIdCard") String customerIdCard,
-                @Param("customerPhone") String customerPhone,
-                @Param("customerEmail") String customerEmail,
-                @Param("customerAddress") String customerAddress,
-                @Param("customerType") int customerType,
-                @Param("id") int idCustomer);
 }
 
 

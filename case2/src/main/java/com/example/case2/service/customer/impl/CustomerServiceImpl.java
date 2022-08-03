@@ -23,8 +23,6 @@ public class CustomerServiceImpl implements CustomerService {
     public Customer save(Customer customer) {
         return customerRepository.save(customer);
     }
-
-
     @Override
     public void delete(int id) {
         customerRepository.delete(id);
@@ -40,17 +38,4 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.findById(id);
     }
 
-    @Override
-    public void update(String customerCode,
-                       String customerName,
-                       String customerBirthday,
-                       int customerGender,
-                       String customerIdCard,
-                       String customerPhone,
-                       String customerEmail,
-                       String customerAddress,
-                       int customerType,
-                       int id) {
-        customerRepository.update(customerCode, customerName, customerBirthday, customerGender, customerIdCard, customerPhone, customerEmail, customerAddress, customerType, id);
-    }
 }

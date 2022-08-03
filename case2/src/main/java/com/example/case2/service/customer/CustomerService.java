@@ -16,14 +16,5 @@ public interface CustomerService {
     List<Customer> findAll();
     Customer findById(int id);
 
-    void update(String customerCode,
-                String customerName,
-                String customerBirthday,
-                int customerGender,
-                String customerIdCard,
-                String customerPhone,
-                String customerEmail,
-                String customerAddress,
-                int customerType,
-                int id);
+
 }

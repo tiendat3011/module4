@@ -9,7 +9,6 @@ import java.util.List;
 
 @Transactional
 public interface CustomerTypeRepository extends PagingAndSortingRepository<CustomerType, Integer> {
-
     @Query(value = "select c from CustomerType c")
     List<CustomerType> findAll();
 }

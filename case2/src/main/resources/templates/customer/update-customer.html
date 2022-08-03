@@ -25,7 +25,7 @@
             <div class="p-3">
                 <h4 style="text-align: center">Chỉnh sửa khách hàng</h4>
 
-                <input class="form-control" type="hidden" th:field="*{id}">
+                <input class="form-control" type="hidden" th:field="*{customerId}">
 
                 <div class="form-group">
                     <label>Mã khách hàng</label>
@@ -87,7 +87,7 @@
 
                     <div class="form-group">
                         <label>Kiểu khách hàng</label>
-                        <select class="form-group w-100" th:field="*{customerTypeId}">
+                        <select class="form-group w-100" th:field="*{customerType.customerTypeId}">
                             <option
                                     th:each="customerType: ${customerTypeList}"
                                     th:value="${customerType.customerTypeId}"

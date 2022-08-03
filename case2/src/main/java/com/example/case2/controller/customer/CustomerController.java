@@ -38,7 +38,6 @@ public class CustomerController {
         model.addAttribute("customerDto", new CustomerDto());
         return "customer/create-customer";
     }
-
     @PostMapping("/create-customer")
     public String create(@Valid @ModelAttribute(name = "customerDto") CustomerDto customerDto,
                          BindingResult bindingResult, Model model) {
@@ -53,7 +52,6 @@ public class CustomerController {
         customerService.save(customer);
         return "redirect:/list-customer";
     }
-
     @GetMapping("/delete-customer/{id}")
     public String showFormDelete(@RequestParam(name = "page", defaultValue = "0") int page,
                                  @RequestParam(name = "name", defaultValue = "") String name,
@@ -62,29 +60,12 @@ public class CustomerController {
         model.addAttribute("customerList", customerService.findAll(PageRequest.of(page, 5), name));
         return "customer/index-customer";
     }
-
     @GetMapping("/{id}/update-customer")
     public String showFormUpdate(@PathVariable int id, Model model) {
         model.addAttribute("customerTypeList", customerTypeService.findAll());
-
-        Customer customer = customerService.findById(id);
-
-        CustomerDto customerDto = new CustomerDto(
-                customer.getCustomerId(),
-                customer.getCustomerCode(),
-                customer.getCustomerName(),
-                customer.getCustomerBirthday(),
-                customer.getCustomerGender(),
-                customer.getCustomerIdCard(),
-                customer.getCustomerPhone(),
-                customer.getCustomerEmail(),
-                customer.getCustomerAddress(),
-                customer.getCustomerType());
-
-        model.addAttribute("customerDto", customerDto);
+        model.addAttribute("customerDto", customerService.findById(id));
         return "customer/update-customer";
     }
-
     @PostMapping("update-customer")
     public String update(@Valid @ModelAttribute("customerDto") CustomerDto customerDto,
                          BindingResult bindingResult, Model model) {
@@ -93,17 +74,10 @@ public class CustomerController {
             model.addAttribute("customerTypeList", customerTypeService.findAll());
             return "customer/update-customer";
         }
+        Customer customer = new Customer();
+        BeanUtils.copyProperties(customerDto,customer);
 
-        customerService.update(customerDto.getCustomerCode(),
-                customerDto.getCustomerName(),
-                customerDto.getCustomerBirthday(),
-                customerDto.getCustomerGender(),
-                customerDto.getCustomerIdCard(),
-                customerDto.getCustomerPhone(),
-                customerDto.getCustomerEmail(),
-                customerDto.getCustomerAddress(),
-                customerDto.getCustomerType().getCustomerTypeId(),
-                customerDto.getId());
+        customerService.save(customer);
         return "redirect:/list-customer";
     }
 }
