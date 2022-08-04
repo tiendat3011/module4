@@ -5,6 +5,7 @@ import com.example.case2.model.service.dto.ServiceDto;
 import com.example.case2.service.service.RentTypeService;
 import com.example.case2.service.service.ServiceService;
 import com.example.case2.service.service.ServiceTypeService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
@@ -74,20 +75,21 @@ public class ServiceController {
                 service.getRentType(),
                 service.getServiceType());
 
+
         model.addAttribute("serviceDto", serviceDto);
         return "service/update-service";
     }
 
     @PostMapping("/update-service")
     public String update (@Valid @ModelAttribute ServiceDto serviceDto, BindingResult bindingResult, Model model){
-
+        Service service=new Service();
         if(bindingResult.hasErrors()){
             model.addAttribute("serviceTypeList", serviceTypeService.findAll());
             model.addAttribute("rentTypeList", rentTypeService.findAll());
             return "service/update-service";
         }
-
-        serviceService.update(serviceDto);
+        BeanUtils.copyProperties(serviceDto,service);
+        serviceService.update(service);
         return "redirect:/list-service";
     }
 }

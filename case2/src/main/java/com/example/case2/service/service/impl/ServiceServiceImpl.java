@@ -43,19 +43,20 @@ public class ServiceServiceImpl implements ServiceService {
     }
 
     @Override
-    public void update(ServiceDto serviceDto) {
+    public void update(com.example.case2.model.service.Service service) {
         serviceRepository.update(
-                serviceDto.getServiceName(),
-                serviceDto.getServiceArea(),
-                serviceDto.getServiceCost(),
-                serviceDto.getServiceMaxPeople(),
-                serviceDto.getStandardRoom(),
-                serviceDto.getDescriptionOtherConvenience(),
-                serviceDto.getPoolArea(),
-                serviceDto.getNumberOfFloors(),
-                serviceDto.getRentType().getRentTypeId(),
-                serviceDto.getServiceType().getServiceTypeId(),
-                serviceDto.getServiceId());
+                service.getServiceName(),
+                service.getServiceArea(),
+                service.getServiceCost(),
+                service.getServiceMaxPeople(),
+                service.getStandardRoom(),
+                service.getDescriptionOtherConvenience(),
+                service.getPoolArea(),
+                service.getNumberOfFloors(),
+                service.getRentType().getRentTypeId(),
+                service.getServiceType().getServiceTypeId(),
+                service.getServiceId()
+        );
     }
 
     @Override

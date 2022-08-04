@@ -34,7 +34,7 @@
 
                         <div class="form-group">
                             <label>Loại dịch vụ</label>
-                            <input class="form-control" type="text" readonly th:field="*{serviceType.serviceTypeName}">
+                            <input class="form-control" type="text" readonly th:field="*{serviceType}">
                         </div>
 
                         <div class="form-group">
@@ -114,7 +114,9 @@
                                 <option
                                         th:each="item: ${rentTypeList}"
                                         th:value="${item.rentTypeId}"
-                                        th:text="${item.rentTypeName}">
+                                        th:text="${item.rentTypeName}"
+
+                                >
                                 </option>
                             </select>
                         </div>
@@ -129,7 +131,7 @@
 
                         <div class="form-group">
                             <label>Loại dịch vụ</label>
-                            <input class="form-control" type="text" readonly th:field="*{serviceType.serviceTypeName}">
+                            <input class="form-control" type="text" readonly th:field="*{serviceType}">
                         </div>
 
                         <div class="form-group">
@@ -208,7 +210,7 @@
 
                         <div class="form-group">
                             <label>Loại dịch vụ</label>
-                            <input class="form-control" type="text" readonly th:field="*{serviceType.serviceTypeName}">
+                            <input class="form-control" type="text" readonly th:field="*{serviceType}">
                         </div>
 
                         <div class="form-group">

@@ -14,7 +14,7 @@ public interface ServiceService {
 
     List<Service> findAll ();
 
-    void update (ServiceDto serviceDto);
+    void update (Service service);
 
     Service findById(int id);
 }

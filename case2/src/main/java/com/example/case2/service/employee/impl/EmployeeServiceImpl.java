@@ -1,0 +1,67 @@
+package com.example.case2.service.employee.impl;
+
+import com.example.case2.model.employee.Employee;
+import com.example.case2.model.employee.dto.EmployeeDto;
+import com.example.case2.repository.employee.EmployeeRepository;
+import com.example.case2.service.employee.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+    @Autowired
+    private EmployeeRepository employeeRepository;
+
+    @Override
+    public Page<Employee> findAll(Pageable pageable, String name) {
+        return employeeRepository.findAll(pageable, name);
+    }
+
+    @Override
+    public void save(Employee employee) {
+        employeeRepository.save(employee);
+    }
+
+    @Override
+    public void create(EmployeeDto employeeDto) {
+      employeeRepository.create( employeeDto.getEmployeeName(),
+                                 employeeDto.getEmployeeBirthday(),
+                                    employeeDto.getEmployeeIdCard(),
+                                    employeeDto.getEmployeeSalary(),
+                                    employeeDto.getEmployeePhone(),
+                                    employeeDto.getEmployeeEmail(),
+                                    employeeDto.getEmployeeAddress(),
+                                    employeeDto.getPositionId(),
+                                    employeeDto.getEducationDegreeId(),
+                                    employeeDto.getDivisionId(),
+                                    employeeDto.getUserApp().getUserName());
+    }
+
+    @Override
+    public List<Employee> findAll() {
+        return employeeRepository.findAll();
+    }
+
+    @Override
+    public void delete(int id) {
+        employeeRepository.delete(id);
+    }
+
+    @Override
+    public Employee findById(int id) {
+      return   employeeRepository.findById(id);
+    }
+
+    @Override
+    public void update(String employeeName, String employeeBirthday, String employeeIdCard, double employeeSalary,
+                       String employeePhone, String employeeEmail, String employeeAddress, int positionId,
+                       int educationDegreeId, int divisionId, String userName, int id) {
+        employeeRepository.update(employeeName, employeeBirthday, employeeIdCard, employeeSalary, employeePhone,
+                employeeEmail, employeeAddress, positionId, educationDegreeId, divisionId, userName, id);
+    }
+}

@@ -1,7 +1,6 @@
 package com.example.case2.repository.customer;
 
 import com.example.case2.model.customer.Customer;
-import com.example.case2.model.customer.dto.CustomerDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;

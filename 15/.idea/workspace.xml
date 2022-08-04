@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="727f2241-3351-43f7-ab6b-fdec03ab4afe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/controller/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/controller/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/controller/employee/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/controller/employee/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/controller/service/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/controller/service/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/EducationDegree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/EducationDegree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/UserApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/UserApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/employee/dto/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/service/RentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/service/RentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/service/dto/ServiceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/model/service/dto/ServiceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/customer/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/DivisionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/DivisionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/EducationDegreeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/EducationDegreeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/PositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/PositionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/employee/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/service/ServiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/repository/service/ServiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/service/service/ServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/service/service/ServiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/service/service/impl/ServiceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/java/com/example/case2/service/service/impl/ServiceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/resources/templates/customer/index-customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/resources/templates/customer/index-customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/resources/templates/service/create-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/resources/templates/service/create-service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case2/src/main/resources/templates/service/update-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case2/src/main/resources/templates/service/update-service.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Ctuq8LUPGVEZItjqJ7hkZYUC2X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/module4_c03/15/exercise/blog_ajax"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="727f2241-3351-43f7-ab6b-fdec03ab4afe" name="Changes" comment="" />
+      <created>1659634390828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659634390828</updated>
+      <workItem from="1659634392606" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

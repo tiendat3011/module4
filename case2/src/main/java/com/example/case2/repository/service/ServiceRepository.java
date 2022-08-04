@@ -8,10 +8,11 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 import java.util.List;
-
+@Repository
 @Transactional
 public interface ServiceRepository extends PagingAndSortingRepository<Service, Integer> {
 
@@ -39,9 +40,17 @@ public interface ServiceRepository extends PagingAndSortingRepository<Service, I
                 @Param("serviceType") Integer serviceType);
 
     @Modifying
-    @Query(value = "update service set (service_name = :serviceName,service_area =:serviceArea ,service_cost = :serviceCost," +
-            "service_max_people = :serviceMaxPeople,standard_room = :standardRoom,description_other_convenience = :descriptionOtherConvenience," +
-            " pool_area =:poolArea , number_of_floors = :numberOfFloors, rent_type_id = :rentType, service_type_id = :serviceType)" +
+    @Query(value = "update service set " +
+            "service_name = :serviceName," +
+            "service_area =:serviceArea ," +
+            "service_cost = :serviceCost," +
+            "service_max_people = :serviceMaxPeople," +
+            "standard_room = :standardRoom," +
+            "description_other_convenience = :descriptionOtherConvenience," +
+            " pool_area =:poolArea , " +
+            "number_of_floors = :numberOfFloors, " +
+            "rent_type_id = :rentType, " +
+            "service_type_id = :serviceType" +
             " where service_id = :id", nativeQuery = true)
     void update (
             @Param("serviceName") String serviceName,

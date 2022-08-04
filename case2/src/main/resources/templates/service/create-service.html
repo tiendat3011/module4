@@ -31,7 +31,7 @@
                     <div th:if="${name == 'Villa'}">
                         <div class="form-group">
                             <label>Loại dịch vụ</label>
-                            <select class="form-group w-100" th:field="*{serviceType}">
+                            <select class="form-group w-100" th:readonly="name" th:field="*{serviceType}">
                                 <option
                                         th:each="item: ${serviceTypeList}"
                                         th:value="${item.serviceTypeId}"
